@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
       {
-          "src": "../../dist/apps/catmash-api/main.js",
+          "src": "dist/apps/catmash-api/main.js",
           "use": "@vercel/node",
           "config": { "includeFiles": ["dist/**"] }
       }
@@ -10,7 +10,7 @@
   "routes": [
       {
           "src": "/(.*)",
-          "dest": "../../dist/apps/catmash-api/main.js"
+          "dest": "dist/apps/catmash-api/main.js"
       }
   ]
 }
