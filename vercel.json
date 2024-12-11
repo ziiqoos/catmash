@@ -1,18 +1,14 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "dist/apps/catmash-api/main.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": "dist/apps/catmash-api/**"
-      }
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs20.x"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/api/main.js"
     }
   ]
 }
