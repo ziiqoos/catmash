@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-     "start": "node dist/apps/catmash-api/main.js"
+     "start": "node dist/apps/catmash-api/main.js",
+     "build-api":"npx nx build catmash-api"
   },
   "private": true,
   "dependencies": {

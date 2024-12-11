@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "apps/catmash-api/package.json",
+      "src": "apps/catmash-api",
       "use": "@vercel/node",
       "config": {
         "includeFiles": "dist/apps/catmash-api/**"
