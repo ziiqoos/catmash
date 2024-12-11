@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "node main.js",
-    "serve-api": "npx nx serve catmash-api"
+    "serve-api": "npx nx serve catmash-api",
+    "build-api":"npx nx build catmash-api"
   },
   "private": true,
   "dependencies": {
